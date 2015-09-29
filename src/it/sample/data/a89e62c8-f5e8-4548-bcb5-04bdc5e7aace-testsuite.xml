@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1443543885532" stop="1443543902830">
+	<name>webdriverio spec</name>
+	<title>webdriverio spec</title>
+	<test-cases>
+		<test-case start="1443543885532" stop="1443543888963" status="passed">
+			<name>should open page</name>
+			<title>should open page</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543888964" stop="1443543892355" status="passed">
+			<name>should show suggest</name>
+			<title>should show suggest</title>
+			<description></description>
+			<labels>
+				<label name="feature" value="suggest"/>
+				<label name="story" value="show"/>
+			</labels>
+			<steps>
+				<step start="1443543891160" stop="1443543891525" status="passed">
+					<name>type search query &apos;allure-frame&apos;</name>
+					<title>type search query &apos;allure-frame&apos;</title>
+					<attachments>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543892355" stop="1443543898257" status="passed">
+			<name>should open search result page</name>
+			<title>should open search result page</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+				<step start="1443543894707" stop="1443543895540" status="passed">
+					<name>type search query &apos;allure-framework&apos;</name>
+					<title>type search query &apos;allure-framework&apos;</title>
+					<attachments>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543898257" stop="1443543902829" status="broken">
+			<name>failing test</name>
+			<title>failing test</title>
+			<description>this test should be failed for example purposes</description>
+			<labels>
+				<label name="feature" value="fail"/>
+			</labels>
+			<steps>
+				<step start="1443543901479" stop="1443543902178" status="passed">
+					<name>save</name>
+					<title>save</title>
+					<attachments>
+						<attachment title="screenshot on fail" source="87034168-be71-4fa4-ab88-10be8c98e4a1-attachment.png" type="image/png" size="226998"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+			<failure>
+				<message>element (.non-existing-element) still not visible after 500ms</message>
+				<stack-trace>Error: element (.non-existing-element) still not visible after 500ms
+    at Object.&lt;anonymous&gt; (node_modules/webdriverio/lib/commands/waitForVisible.js:56:19)
+    at Object.safeExecute (node_modules/webdriverio/lib/utils/safeExecute.js:19:24)
+    at Object.WebdriverIO.resolve (node_modules/webdriverio/lib/webdriverio.js:86:29)
+    at node_modules/webdriverio/lib/webdriverio.js:226:32
+    at _rejected (node_modules/webdriverio/node_modules/q/q.js:830:24)
+    at node_modules/webdriverio/node_modules/q/q.js:856:30
+    at Promise.when (node_modules/webdriverio/node_modules/q/q.js:1108:31)
+    at Promise.promise.promiseDispatch (node_modules/webdriverio/node_modules/q/q.js:774:41)
+    at node_modules/webdriverio/node_modules/q/q.js:590:44
+    at runSingle (node_modules/webdriverio/node_modules/q/q.js:123:13)
+    at flush (node_modules/webdriverio/node_modules/q/q.js:111:13)</stack-trace>
+			</failure>
+		</test-case>
+	</test-cases>
+</ns2:test-suite>

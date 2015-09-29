@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1443543902844" stop="1443543919776">
+	<name>webdriver-http-sync spec</name>
+	<title>webdriver-http-sync spec</title>
+	<test-cases>
+		<test-case start="1443543902844" stop="1443543906194" status="passed">
+			<name>should open page</name>
+			<title>should open page</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543906194" stop="1443543909954" status="passed">
+			<name>should show suggest</name>
+			<title>should show suggest</title>
+			<description></description>
+			<labels>
+				<label name="feature" value="suggest"/>
+				<label name="story" value="show"/>
+			</labels>
+			<steps>
+				<step start="1443543908494" stop="1443543909125" status="passed">
+					<name>type search query &apos;allure-frame&apos;</name>
+					<title>type search query &apos;allure-frame&apos;</title>
+					<attachments>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543909954" stop="1443543915177" status="passed">
+			<name>should open search result page</name>
+			<title>should open search result page</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+				<step start="1443543912044" stop="1443543913008" status="passed">
+					<name>type search query &apos;allure-framework&apos;</name>
+					<title>type search query &apos;allure-framework&apos;</title>
+					<attachments>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1443543915177" stop="1443543919775" status="broken">
+			<name>failing test</name>
+			<title>failing test</title>
+			<description>this test should be failed for example purposes</description>
+			<labels>
+				<label name="feature" value="fail"/>
+			</labels>
+			<steps>
+				<step start="1443543918670" stop="1443543919165" status="passed">
+					<name>save</name>
+					<title>save</title>
+					<attachments>
+						<attachment title="screenshot on fail" source="75461da9-bb38-4c58-b29c-4306c26a180d-attachment.png" type="image/png" size="287714"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+			<failure>
+				<message>no such element
+  (Session info: chrome=42.0.2311.90)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Linux 3.13.0-35-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;chrome42-sg-h-9.haze.yandex.net&apos;, ip: &apos;2a02:6b8:b010:19:0:0:0:323&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-35-generic&apos;, java.version: &apos;1.7.0_72&apos;
+*** Element info: {Using=css selector, value=.non-existing-element}
+Session ID: ff3dd9c03b3a17a7e4f242389195cbfa
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.yzckzY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=42.0.2311.90, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</message>
+				<stack-trace>Error: no such element
+  (Session info: chrome=42.0.2311.90)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Linux 3.13.0-35-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;chrome42-sg-h-9.haze.yandex.net&apos;, ip: &apos;2a02:6b8:b010:19:0:0:0:323&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-35-generic&apos;, java.version: &apos;1.7.0_72&apos;
+*** Element info: {Using=css selector, value=.non-existing-element}
+Session ID: ff3dd9c03b3a17a7e4f242389195cbfa
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.yzckzY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=42.0.2311.90, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+    at validateResponse (node_modules/webdriver-http-sync/lib/parse_response.js:49:19)
+    at module.exports (node_modules/webdriver-http-sync/lib/parse_response.js:63:5)
+    at verbose (node_modules/webdriver-http-sync/lib/http.js:62:12)
+    at Object.post (node_modules/webdriver-http-sync/lib/http.js:95:5)
+    at createElement (node_modules/webdriver-http-sync/lib/element_api.js:42:19)
+    at WebDriver.getElement (node_modules/webdriver-http-sync/lib/element_api.js:75:14)
+    at Context.&lt;anonymous&gt; (test/webdriver-sync.spec.js:53:26)</stack-trace>
+			</failure>
+		</test-case>
+		<test-case start="1443543919775" stop="1443543919775" status="pending">
+			<name>a pending test case</name>
+			<title>a pending test case</title>
+			<description></description>
+			<labels>
+			</labels>
+			<steps>
+			</steps>
+			<attachments>
+			</attachments>
+			<failure>
+				<message>Test ignored</message>
+				<stack-trace></stack-trace>
+			</failure>
+		</test-case>
+	</test-cases>
+</ns2:test-suite>
