@@ -12,7 +12,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="1-1-actual.png" type="image/png"/>
+				<attachment title="actual" source="1-1-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 		<test-case start="1443622429455" stop="1443622429456" status="passed">
@@ -24,7 +24,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="1-2-actual.png" type="image/png"/>
+				<attachment title="actual" source="1-2-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 		<test-case start="1443622429456" stop="1443622429456" status="passed">
@@ -36,7 +36,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="1-3-actual.png" type="image/png"/>
+				<attachment title="actual" source="1-3-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 	</test-cases>

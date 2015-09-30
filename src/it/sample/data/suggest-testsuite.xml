@@ -12,9 +12,9 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="2-1-actual.png" type="image/png"/>
-				<attachment title="expected" source="2-1-expected.png" type="image/png"/>
-				<attachment title="diff" source="2-1-diff.png" type="image/png"/>
+				<attachment title="actual" source="2-1-actual-attachment.png" type="image/png"/>
+				<attachment title="expected" source="2-1-expected-attachment.png" type="image/png"/>
+				<attachment title="diff" source="2-1-diff-attachment.png" type="image/png"/>
 			</attachments>
 			<failure>
 				<message>Element doesn&apos;t match</message>
@@ -31,7 +31,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="2-2-actual.png" type="image/png"/>
+				<attachment title="actual" source="2-2-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 		<test-case start="1443622429467" stop="1443622429467" status="passed">
@@ -43,7 +43,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="2-3-actual.png" type="image/png"/>
+				<attachment title="actual" source="2-3-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 		<test-case start="1443622429467" stop="1443622429467" status="passed">
@@ -55,7 +55,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="2-4-actual.png" type="image/png"/>
+				<attachment title="actual" source="2-4-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 		<test-case start="1443622429467" stop="1443622429468" status="passed">
@@ -67,7 +67,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="2-5-actual.png" type="image/png"/>
+				<attachment title="actual" source="2-5-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 	</test-cases>

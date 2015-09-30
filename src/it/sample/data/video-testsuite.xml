@@ -12,7 +12,7 @@
 			<steps>
 			</steps>
 			<attachments>
-				<attachment title="actual" source="4-1-actual.png" type="image/png"/>
+				<attachment title="actual" source="4-1-actual-attachment.png" type="image/png"/>
 			</attachments>
 		</test-case>
 	</test-cases>
