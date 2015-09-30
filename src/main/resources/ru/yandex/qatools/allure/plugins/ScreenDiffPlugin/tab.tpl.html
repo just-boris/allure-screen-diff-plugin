@@ -25,7 +25,7 @@
                                 {{testsuite.statistic.total}}
                             </td>
                         </tr>
-                        <tr ng-if="testsuite.$expanded" ng-repeat="testcase in testsuite.testCases" class="screen-diff__testcases"
+                        <tr ng-if="testsuite.$expanded" ng-repeat="testcase in testsuite.testCases" class="clickable screen-diff__testcases"
                             ng-class="{active: ctrl.testcase == testcase}"
                             ng-click="ctrl.selectTestcase(testcase)">
                             <td>{{testcase.title}}</td>
