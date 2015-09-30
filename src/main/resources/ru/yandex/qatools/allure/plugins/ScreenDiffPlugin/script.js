@@ -56,12 +56,29 @@
         }.bind(this));
         $scope.$watch('ctrl.sorting', this.list.sort.bind(this.list), true);
     });
-    module.controller('ScreenDiffTestcaseController', function($scope, $http) {
+    module.controller('ScreenDiffTestcaseController', function($scope, $http, $state) {
         function loadTestcase(uid) {
             $http.get('data/'+uid+'-testcase.json').then(function(response) {
                 $scope.testcase = response.data;
+                $scope.screenshots = $scope.testcase.attachments.reduce(function(screenshots, attach) {
+                    screenshots[attach.title] = attach;
+                    return screenshots;
+                }, {});
+                $scope.viewType = $scope.screenshots.diff ? 'diff' : 'overlay';
+                $scope.overlay = 0;
             });
         }
+        $scope.getSourceUrl = function(attachment) {
+            return attachment && 'data/' + attachment.source;
+        };
+        $scope.isExpanded = function() {
+            return $state.is('screenDiff.testcase.expanded');
+        };
+        $scope.toggleExpanded = function() {
+            $state.go('screenDiff.testcase' +
+                ($scope.isExpanded() ? '' : '.expanded')
+            );
+        };
         $scope.$watch('ctrl.testcase.uid', function(uid) {
             if(uid) {
                 loadTestcase(uid);
