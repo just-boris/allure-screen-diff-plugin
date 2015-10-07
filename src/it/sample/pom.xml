@@ -37,7 +37,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>ru.yandex.qatools.allure.data.DummyReportGenerator</mainClass>
+                    <mainClass>ru.yandex.qatools.allure.DummyReportGenerator</mainClass>
                     <arguments>
                         <argument>${project.basedir}/data</argument>
                         <argument>${allure.report.directory}</argument>

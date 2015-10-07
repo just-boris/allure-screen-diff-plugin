@@ -1,0 +1,5 @@
+<div class="list-item clickable" ng-repeat="testcase in data" ui-sref="screenDiff.testcase({testcaseUid: testcase.uid})">
+    <span class="text-status-{{testcase.status|lowercase}}">{{testcase.title}}</span>
+    <span class="pull-right label label-status-{{testcase.status|lowercase}}">{{testcase.status}}</span>
+</div>
+<p ng-show="data.length == 0" class="text-success">No failed tests</p>

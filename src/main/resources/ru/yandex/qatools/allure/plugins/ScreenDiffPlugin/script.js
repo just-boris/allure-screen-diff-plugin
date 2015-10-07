@@ -2,8 +2,8 @@
 (function() {
     "use strict";
     var module = angular.module('allure.screenDiff', []);
-    module.config(function($stateProvider, allureTabsProvider) {
-        allureTabsProvider.addTab('screenDiff', {
+    module.config(function($stateProvider, allurePluginsProvider) {
+        allurePluginsProvider.addTab('screenDiff', {
             title: 'Screenshots',
             icon: 'fa fa-picture-o',
             controllerAs: 'ctrl',
@@ -15,7 +15,12 @@
                 }
             }
         });
-        allureTabsProvider.addStylesheet('screenDiff');
+        allurePluginsProvider.addWidget('screenDiff', {
+            title: 'Screenshot mismatches',
+            templateUrl: 'plugins/screenDiff/widget.tpl.html',
+            tabLink: 'screenDiff'
+        });
+        allurePluginsProvider.addStylesheet('screenDiff');
         $stateProvider.state('screenDiff.testcase', {
             url: "/:testcaseUid"
         }).state('screenDiff.testcase.expanded', {
