@@ -8,6 +8,7 @@
 			<title>buttons</title>
 			<description></description>
 			<labels>
+				<label name="testType" value="screenshotDiff" />
 			</labels>
 			<steps>
 			</steps>
@@ -27,6 +28,7 @@
 			<title>language</title>
 			<description></description>
 			<labels>
+				<label name="testType" value="screenshotDiff" />
 			</labels>
 			<steps>
 			</steps>
@@ -39,6 +41,7 @@
 			<title>payment 1</title>
 			<description></description>
 			<labels>
+				<label name="testType" value="screenshotDiff" />
 			</labels>
 			<steps>
 			</steps>
@@ -51,6 +54,7 @@
 			<title>payment 2</title>
 			<description></description>
 			<labels>
+				<label name="testType" value="screenshotDiff" />
 			</labels>
 			<steps>
 			</steps>
