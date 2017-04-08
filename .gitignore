@@ -1,1 +1,3 @@
-target/
+allure-cli
+allure-results
+allure-report
