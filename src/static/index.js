@@ -2,7 +2,9 @@
     jQuery('body').append('<link rel="stylesheet" href="plugins/screen-diff/styles.css" />');
 
     function renderImage(src) {
-        return '<img class="screen-diff__image" src="data/attachments/' + src + '">';
+        return '<div class="screen-diff__container">' +
+            '<img class="screen-diff__image" src="data/attachments/' + src + '">' +
+        '</div>';
     }
 
     function renderDiffContent(type, data) {
@@ -21,7 +23,7 @@
             return renderImage(diffImage.source);
         }
         if(type === 'overlay') {
-            return '<div class="screen-diff__overlay">' +
+            return '<div class="screen-diff__overlay screen-diff__container">' +
                 '<img class="screen-diff__image" src="data/attachments/' + expectedImage.source + '">' +
                 '<div class="screen-diff__image-over">' +
                     '<img class="screen-diff__image" src="data/attachments/' + actualImage.source + '">' +
@@ -74,8 +76,9 @@
         },
         onOverlayMove: function (event) {
             var pageX = event.pageX;
+            var containerScroll = this.$('.screen-diff__container').scrollLeft();
             var elementX = event.currentTarget.getBoundingClientRect().left;
-            var delta = pageX - elementX;
+            var delta = pageX - elementX + containerScroll;
             this.$('.screen-diff__image-over').width(delta);
         },
         onDiffTypeChange: function (event) {
