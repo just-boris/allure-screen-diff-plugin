@@ -1,7 +1,5 @@
 id: screen-diff
 name: Screen diff
 description: Who cares about description
-extensions:
-  - io.qameta.allure.packages.PackagesPlugin
 jsFiles:
   - index.js
